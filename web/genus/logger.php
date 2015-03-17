@@ -1,17 +1,19 @@
 <?php
 
-define( 'DEFAULT_LOGFILE', LOGDIR . 'r14journal.log' );
+define( 'DEFAULT_LOGFILE', 'activity.log' );
 
 class Logger {
 
     var $fp, $pid;
 
     function Logger( $logfile=DEFAULT_LOGFILE ) {
+        chdir( LOGDIR );
         $this->fp = fopen( $logfile, 'a' );
         $this->pid = getmypid();
     }
 
     static function quicklog( $str, $logfile=DEFAULT_LOGFILE ) {
+        chdir( LOGDIR );
         $fp = fopen( $logfile, 'a' );
         $ts = date( 'Y-m-d H:i:s' );
         $rip = $_SERVER['REMOTE_ADDR'];
@@ -41,6 +43,5 @@ class Logger {
     }
 
 }
-
 
 ?>

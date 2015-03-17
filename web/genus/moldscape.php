@@ -2,22 +2,20 @@
 
 class Moldscape {
 
-  const TEMPLATEDIR = 'views/';
-
   var $bind, $dolayout, $tplate;
     
   static function render( $t, $bind=null, $dolayout=false ) {
     if ($dolayout) {
-      $html = file_get_contents( self::TEMPLATEDIR . 'layout.tpl' );
+      $html = file_get_contents( TEMPLATEDIR . '/layout.tpl' );
       $html = str_replace( 
         '<!--YIELD-->', 
-        file_get_contents( self::TEMPLATEDIR . $t . '.tpl' ), 
+        file_get_contents( TEMPLATEDIR . '/' . $t . '.tpl' ), 
         $html 
       );
     } else {
-      $html = file_get_contents( self::TEMPLATEDIR . $t . '.tpl' );
+      $html = file_get_contents( TEMPLATEDIR . '/' . $t . '.tpl' );
     }
-    $vdir = self::TEMPLATEDIR;
+    $vdir = TEMPLATEDIR . '/';
     $html = preg_replace( 
       '/\{\#(\w+)\#\}/e', 
       'file_get_contents( "$vdir" . "$1.tpl" )', 
@@ -84,3 +82,4 @@ function lambdamu( $fcall ) {
   }
 }
 
+?>
