@@ -2,17 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{title}}</title>
+    <title>{=SITETITLE=}</title>
   </head>
   <body>
     <header>
-      <h1>{{title}}</h1>
+      <h1>{=SITETITLE=}</h1>
     </header>
     <section>
 <!--YIELD-->
     </section>
-    <footer>
-      A GNT creation &copy;2015
-    </footer>
+    <footer>{=SITEFOOTER=}</footer>
   </body>
 </html>

@@ -10,7 +10,7 @@ class DM {
     static function connect() {
         $dsn = 'sqlite:' . DBDIR . '/zippyzo.db';
         try {
-            self::$dbc = new PDO( $dsn, DBUSER, DBPASS, self::$dbopt );
+            self::$dbc = new PDO( $dsn );
         } catch (PDOException $e) {
             die( 'database connection error' );
         }

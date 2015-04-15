@@ -2,10 +2,11 @@
 
 require( 'horatio.php' );
 
-$p = new Moldscape( 'default' );
-$p->set( 'title', 'zippyzo' );
-$p->set( 'pagetitle', 'welcome' );
-$p->set( 'pagebody', @$_GET['PATH_INFO'] );
-echo $p->generate();
+if (strlen( $_GET['PATH_INFO'] ) == 0) {
+	$_GET['PATH_INFO'] = HOMEPAGE;
+}
+$req = new Request();
+$resp = $req->accommodate();
+echo $resp;
 
 ?>

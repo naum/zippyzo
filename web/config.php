@@ -12,4 +12,10 @@ define( 'DBDIR', dirname( $_SERVER['DOCUMENT_ROOT'] ) . '/db' );
 define( 'LOGDIR', dirname( $_SERVER['DOCUMENT_ROOT'] ) . '/log' );
 define( 'TEMPLATEDIR', $_SERVER['DOCUMENT_ROOT'] . '/views' );
 
+## SITE INFO
+
+define( 'HOMEPAGE', 'wiki/Genesis' );
+define( 'SITETITLE', 'zippyzo' );
+define( 'SITEFOOTER', 'A GNT creation &copy;1963-2015' );
+
 ?>
