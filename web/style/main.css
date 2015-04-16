@@ -1,0 +1,58 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a:link {
+	color: #B78793;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #B78793;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	text-decoration-style: wavy	;
+}
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	font-family: Avenir, sans-serif;
+	font-size: 100%;
+	line-height: 1.33em;
+	margin: 3% auto;
+	max-width: 40em;
+}
+
+footer {
+	color: #BBBBBB;
+	font-size: 0.75em;
+	font-style: italic;
+	margin-top: 3em;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #E7D7DB;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.37em;
+}
+
+h2 {
+	font-size: 1.78em;
+}
+
+h3 {
+	font-size: 1.33em;
+}
+
+header {
+	margin-bottom: 3em;
+}

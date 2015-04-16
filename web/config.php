@@ -16,6 +16,6 @@ define( 'TEMPLATEDIR', $_SERVER['DOCUMENT_ROOT'] . '/views' );
 
 define( 'HOMEPAGE', 'wiki/Genesis' );
 define( 'SITETITLE', 'zippyzo' );
-define( 'SITEFOOTER', 'A GNT creation &copy;1963-2015' );
+define( 'SITEFOOTER', 'A GNT creation &copy;2015' );
 
 ?>
