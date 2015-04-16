@@ -5,27 +5,27 @@
 }
 
 a:link {
-	color: #B78793;
+	color: #BDEDFF;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #B78793;
+	color: #BDEDFF;
 }
 
 a:hover, a:active {
-	text-decoration: underline;
-	text-decoration-style: wavy	;
+	border-bottom: solid 0.0625em #BDEDFF;
 }
 
 body {
-	background-color: #000000;
+	background-color: #2A3A40;
 	color: #ffffff;
 	font-family: Avenir, sans-serif;
 	font-size: 100%;
 	line-height: 1.33em;
 	margin: 3% auto;
 	max-width: 40em;
+	width: 83%;
 }
 
 footer {
@@ -37,7 +37,7 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #E7D7DB;
+	color: #E9F9FF;
 	text-align: center;
 }
 
