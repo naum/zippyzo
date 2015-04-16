@@ -18,7 +18,6 @@ function throwErrorPage( $em, $h='error' ) {
 }
 
 function tossSimplePage( $h, $b ) {
-	Logger::quicklog( "inside tossSimplePage, h=$h" );
 	$p = new Moldscape( 'default' );
 	$p->set( 'pagetitle', $h );
 	$p->set( 'pagebody', $b );
