@@ -11,13 +11,13 @@ function __autoload( $classname ) {
     }
 }
 
-function throwErrorPage( $em, $h='error' ) {
+function throw_error_page( $em, $h='error' ) {
 	echo "<h2>$h</h2>";
 	echo "<p>$em</p>";
 	exit;
 }
 
-function tossSimplePage( $h, $b ) {
+function toss_simple_page( $h, $b ) {
 	$p = new Moldscape( 'default' );
 	$p->set( 'pagetitle', $h );
 	$p->set( 'pagebody', $b );

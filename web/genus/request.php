@@ -17,7 +17,7 @@ class Request {
 			$meth = strtolower( $this->verb );
 			$resp = $ctrl->$meth( $this );
 		} else {
-			$resp = tossSimplePage( '404', "page not found" );
+			$resp = toss_simple_page( '404', "page not found" );
 		}
 		return $resp;
 	}

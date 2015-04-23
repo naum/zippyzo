@@ -20,7 +20,7 @@ class DM {
     static function errorOut( $e ) {
         Logger::quicklog( "e: " . print_r( $e, true ), DM_LOG );
         Logger::quicklog( "DB ERROR: " . $e->getMessage() . " CODE: " . $e->getCode(), DM_LOG );
-        throwErrorPage( 'database query error' );
+        throw_error_page( 'database query error' );
     }
 
     static function esc( $str ) { 
