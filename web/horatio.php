@@ -12,12 +12,9 @@ function __autoload( $classname ) {
 }
 
 function accommodate_request() {
-	Logger::quicklog( "inside accommodate_request" );
 	$verb = $_SERVER['REQUEST_METHOD'];
 	$parg = explode( '/', $_GET['PATH_INFO'] );
 	$ctrlname = ucfirst( $parg[0] . 'Controller' );
-	Logger::quicklog( "ctrlname=$ctrlname, verb=$verb" );
-	Logger::quicklog( "parg=" . print_r( $parg, true ) );
 	if (class_exists( $ctrlname )) {
 		$ctrl = new $ctrlname;
 		$meth = strtolower( $verb );
